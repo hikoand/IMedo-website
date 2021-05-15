@@ -6,7 +6,6 @@ body {
 
 .slide__conatiner {
   position: relative;
-  height: 80vh;
   overflow: hidden;
 }
 
@@ -50,7 +49,7 @@ body {
 }
 
 .slide__controler button {
-  color: black;
+  color: gray;
 }
 
 .slide__controler .btn__next {

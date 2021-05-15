@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script type="text/javascript" src="./js/jquery_3.5.1.js"></script>
     <script src="./js/slider.js" defer></script>
-    <script src="./js/main.js" defer></script>
+    <!-- <script src="./js/main.js" defer></script> -->
+    <script src="./js/menu.js" defer></script>
+    
   </head>
   <body>
     <!-- Maininfo -->
@@ -147,7 +149,6 @@
       </div>
     </section>
 
-
     <!-- Overview -->
     <section id="home" class="overview">
       <div class="home__container">
@@ -157,37 +158,57 @@
             About The CoronaVirus<br />infectious Disease
           </h1>
           <div class="miniBar"></div>
-          <p>
-            Consectetur elit sedo eiusmod tempor inc
-          </p>
-          <ul class="home__textlist">
-            <li>
-              <i class="fas fa-arrow-right"></i>Consectetur adipisicing elit sed
-              eiusmod
-            </li>
-            <li>
-              <i class="fas fa-arrow-right"></i>Tempor incididunt labore dolore
-              magna aliqua.
-            </li>
-            <li>
-              <i class="fas fa-arrow-right"></i>Enim ad minim veniam quis
-              nostrud exercitation
-            </li>
-            <li>
-              <i class="fas fa-arrow-right"></i>Ullamco laboris nisi ut aliquip
-              ex ea commodo
-            </li>
-            <li>
-              <i class="fas fa-arrow-right"></i>Aute irure dolor in
-              reprehenderit in voluptate velit esse
-            </li>
-          </ul>
+          </div>
+          <div class="home__menu">
+          <dl>
+            <dt><i class="fas fa-arrow-right"></i> What is COVID-19?</dt>
+            <dd>
+              <p>
+                COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.
+                WHO first learned of this new virus on 31 December 2019, following a
+                report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s
+                Republic of China.
+              </p>
+            </dd>
+            <dt>
+              <i class="fas fa-arrow-right"></i> What are the symptoms of COVID-19?
+            </dt>
+            <dd>
+              <p>
+                The most common symptoms of COVID-19 are<br /><br />
+                Fever<br />
+                Dry cough<br />
+                Fatigue<br /><br />
+                Other symptoms that are less common and may affect some patients
+                include:<br /><br />
+                Loss of taste or smell,<br />
+                Nasal congestion, Conjunctivitis (also known as red eyes)<br />
+                Sore throat,<br />
+                Headache,<br />
+                Muscle or joint pain,<br />
+                Different types of skin rash,<br />
+                Nausea or vomiting,<br />
+                Diarrhea,<br />
+                Chills or dizziness.
+              </p>
+            </dd>
+            <dt>
+              <i class="fas fa-arrow-right"></i> What happens to people who get
+              COVID-19?
+            </dt>
+            <dd>
+              <p>
+                Among those who develop symptoms, most (about 80%) recover from the
+                disease without needing hospital treatment. About 15% become seriously
+                ill and require oxygen and 5% become critically ill and need intensive
+                care. Complications leading to death may include respiratory failure,
+                acute respiratory distress syndrome (ARDS), sepsis and septic shock,
+                thromboembolism, and/or multiorgan failure, including injury of the
+                heart, liver or kidneys.
+              </p>
+            </dd>
+          </dl>
         </div>
-        <img
-          src="imgs/about_img.png"
-          alt="Heewon's profile photo"
-          class="home__img overview__img"
-        />
       </div>
     </section>
 
@@ -327,21 +348,20 @@
         <h3>Last update: 11 April 2020, 05:00 GMT+10</h3>
       <div class="miniBar"></div> 
     </div>
-    <div class="situation__icons">
-      <div class="situation__icon">
+    <div class="situation__icon">
       <img src="./imgs/banner-icon1.png" alt="banner icon">
-      <h1>1,699,595</h1>
-      <h3>Confirmed Cases</h3>
+      <h1 class="countNum">1699595</h1>
+      <h3>Confirmed<br>Deaths</h3>
     </div>
     <div class="situation__icon">
       <img src="./imgs/banner-icon2.png" alt="banner icon">
-      <h1>1,699,595</h1>
-      <h3>Confirmed Cases</h3>
+      <h1 class="countNum">106138</h1>
+      <h3>Confirmed<br>Deaths</h3>
     </div>
     <div class="situation__icon">
       <img src="./imgs/banner-icon3.png" alt="banner icon">
-      <h1>1,699,595</h1>
-      <h3>Confirmed Cases</h3>
+      <h1 class="countNum">750235</h1>
+      <h3>Confirmed<br>Recovered</h3>
     </div>
     </div>
   </div>
@@ -578,12 +598,11 @@ about Corona Virus</h2>
               <h3>Medical Lab</h3>
               <div class="miniBar"></div>
               <ul>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">JOURNAL</a></li>
+                <li><a href="#">PREVENTION</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SOTRE LOCATION</a></li>
               </ul>
             </div>
           </div>
@@ -616,7 +635,7 @@ about Corona Virus</h2>
         </div>
         </div>
         <div class="copyright">
-          <p>© 2021 KINTO EUROPE ALL RIGHTS RESERVED.</p>
+          <p>© 2021 IMedDo ALL RIGHTS RESERVED.</p>
         </div>
       </footer>
   </body>

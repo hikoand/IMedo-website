@@ -235,6 +235,7 @@ body {
 }
 
 /*Home*/
+
 .home_slide {
   background-image: url('../imgs/slider_bg.png');
   background-repeat: no-repeat;
@@ -262,12 +263,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.home__container.slide .home__title {
-  /* padding-right: 20px;
-  position: absolute;
-  left: 20%; */
 }
 
 .home__img {
@@ -307,7 +302,6 @@ button {
   border-radius: 3px;
   font-size: 14px;
   text-transform: uppercase;
-  padding-right: 10px;
 }
 
 button.red {
@@ -321,18 +315,46 @@ button.red {
   padding-top: 110px;
 }
 
-.home__textlist li {
-  margin-bottom: 25px;
+.overview .home__container {
+  flex-direction: column;
 }
 
-.home__textlist li i {
-  padding-right: 8px;
-  color: var(--color-red);
+.overview .home__container .miniBar {
+  margin: 30px auto;
 }
 
-.overview__img {
-  width: 25%;
-  height: 25%;
+.overview .home__container .home__title {
+  text-align: center;
+}
+
+.overview dl {
+  width: 450px;
+}
+
+.overview dt {
+  font-size: 17px;
+  height: 60px;
+  line-height: 60px;
+  text-indent: 15px;
+  color: var(--color-white);
+  background: var(--color-blue);
+  text-align: left;
+  cursor: pointer;
+  font-weight: var(--weight-semi-bold);
+}
+
+.overview dd {
+  background: var(--color-light-blue);
+  margin: 0;
+  padding: 20px;
+}
+
+.overview dd p {
+  text-align: left;
+  font-size: 17px;
+  padding: 0;
+  padding: 20px;
+  line-height: 20px;
 }
 
 /* tip */
@@ -515,6 +537,7 @@ button.red {
   font-size: 20px;
   color: var(--color-black);
   line-height: 25px;
+  font-weight: var(--weight-semi-bold);
 }
 
 .symtomCtn__item p {
@@ -537,7 +560,8 @@ button.red {
 }
 
 .situation__text {
-  padding-right: 95px;
+  padding-right: 20px;
+  width: 500px;
 }
 
 .situation__text .miniBar {
@@ -560,12 +584,14 @@ button.red {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 640px;
 }
 
 .situation__icon {
-  padding-right: 70px;
+  /* padding-right: 70px; */
   display: inline-block;
   text-align: center;
+  width: 33%;
 }
 
 .situation__icon:last-child {
@@ -581,6 +607,7 @@ button.red {
 .situation__icon h3 {
   color: var(--color-white);
   font-weight: var(--font-regular);
+  line-height: 23px;
 }
 
 /* prevent */
@@ -606,6 +633,10 @@ button.red {
 
 .prevent__text .miniBar {
   margin: auto;
+}
+
+.prevent__text h3 {
+  line-height: 50px;
 }
 
 .prevent__items {
@@ -798,7 +829,7 @@ button.red {
 }
 
 .news__item {
-  width: 380px;
+  width: 360px;
   height: 680px;
 }
 
@@ -1009,7 +1040,7 @@ button.red {
   }
 
   .miniBar {
-    margin: 0 auto;
+    margin: 15px auto;
   }
 
   #maininfo {
@@ -1021,8 +1052,19 @@ button.red {
   }
 
   .home_slide {
-    /* height: 85vh; */
     background: none;
+  }
+
+  .overview,
+  #symtom,
+  #prevent {
+    padding-top: 50px;
+  }
+
+  .slide .home__title p {
+    padding: 0;
+    padding-bottom: 15px;
+    line-height: 18px;
   }
 
   .slide__controler .btn__prev {
@@ -1060,11 +1102,13 @@ button.red {
   }
 
   .navbar__menu {
-    font-size: var(--font-micro);
+    font-size: var(--font-small);
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .home_slide {
-    padding-bottom: 0;
+  #home.home_slide {
+    padding: 0;
   }
 
   .home__container.slide {
@@ -1094,9 +1138,8 @@ button.red {
     padding: 20px 0;
   }
 
-  .home__title .miniBar {
-    margin: 0 auto;
-  }
+  .prevent__text h1,
+  .situation__text h1,
   .home__title h1 {
     line-height: 2rem;
     margin: 0;
@@ -1104,17 +1147,22 @@ button.red {
   }
 
   .home__title p {
-    padding: 5px 0 10px 0;
+    padding: 0;
+    padding-bottom: 15px;
+    line-height: 18px;
     font-weight: var(--weight-bold);
   }
 
-  .home__textlist {
-    text-align: left;
-    font-size: var(--font-small);
+  .home__menu {
+    order: 1;
   }
 
   #tip {
     padding: 0;
+  }
+
+  .tip__title p {
+    padding-bottom: 0;
   }
 
   .tip__items {
@@ -1152,8 +1200,16 @@ button.red {
     flex-direction: column;
   }
 
+  .symtom-item_img_box {
+    margin-bottom: 20px;
+  }
+
   .symtomCtn__right {
     text-align: center;
+  }
+
+  .symtomCtn__right img {
+    padding: 18px;
   }
 
   .symtomCtn__right .miniBar {
@@ -1178,12 +1234,16 @@ button.red {
   }
 
   .situation__icon h1 {
-    margin: 0;
+    margin: 10px 0;
   }
 
   .situation__icon {
     padding: 0;
     padding-top: 40px;
+  }
+
+  #prevent {
+    padding-bottom: 100px;
   }
 
   .prevent__items {
@@ -1199,8 +1259,22 @@ button.red {
     margin-top: 30px;
   }
 
+  .mission__text .home__contact.red {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  #symtom.contact_section .symtom_container {
+    padding: 40px 0;
+  }
+
   #news {
     background-color: var(--color-blue);
+    padding-bottom: 80px;
+  }
+
+  .news_container {
+    padding-top: 50px;
   }
 
   .news__bg {
@@ -1208,6 +1282,7 @@ button.red {
   }
 
   .news__items {
+    padding-top: 20px;
     flex-direction: column;
   }
 
@@ -1227,8 +1302,13 @@ button.red {
     text-align: center;
   }
 
+  .app__text p {
+    padding: 0 20px;
+  }
+
   #footer .inner {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   #footer > div.inner > div.f_box > div > h3 {
@@ -1239,12 +1319,22 @@ button.red {
     flex-direction: row;
   }
 
+  #footer .inner .f_left {
+    padding: 0;
+  }
+
   #footer > div.inner > div.f_right {
+    padding-top: 20px;
     display: flex;
   }
 
-  #footer > div.inner > div.f_right .f_info {
+  #footer .f_info {
     padding-right: 40px;
+  }
+
+  #footer .f_connect h3,
+  #footer .f_info h3 {
+    text-align: center;
   }
 
   #footer .inner .f_box ul {
