@@ -42,18 +42,30 @@ body {
   font-size: 30px;
 }
 
+.slide__controler button {
+  width: auto;
+  height: auto;
+  color: gray;
+}
+
 .slide__controler .btn__prev {
   top: 50%;
   left: 10%;
   -webkit-transform: translateY(-50%);
 }
 
-.slide__controler button {
-  color: gray;
-}
-
 .slide__controler .btn__next {
   top: 50%;
   right: 10%;
   -webkit-transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1066px) {
+  .slide__controler .btn__prev {
+    left: 3%;
+  }
+
+  .slide__controler .btn__next {
+    right: 3%;
+  }
 }

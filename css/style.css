@@ -41,7 +41,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -328,7 +328,8 @@ button.red {
 }
 
 .overview dl {
-  width: 450px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .overview dt {
@@ -477,10 +478,10 @@ button.red {
   padding-right: 50px;
   padding-top: 150px;
   width: 450px;
+  display: flex;
 }
 
 .symtomCtn__left img {
-  padding: 10px;
   padding-right: 60px;
   width: 100%;
 }
@@ -974,7 +975,7 @@ button.red {
 }
 
 .copyright p {
-  font-size: 12px;
+  font-size: var(--font-small);
   text-align: center;
   padding: 40px 0;
   color: var(--color-white);
@@ -1067,13 +1068,17 @@ button.red {
     line-height: 18px;
   }
 
+  .slide__list > div:nth-child(2) button.home__contact {
+    margin-bottom: 10px;
+  }
+
   .slide__controler .btn__prev {
-    left: 0;
+    left: 10%;
     top: 30%;
   }
 
   .slide__controler .btn__next {
-    right: 0;
+    right: 10%;
     top: 30%;
   }
 
@@ -1157,6 +1162,14 @@ button.red {
     order: 1;
   }
 
+  .overview dl {
+    width: 90%;
+  }
+
+  .overview dt {
+    font-size: 13px;
+  }
+
   #tip {
     padding: 0;
   }
@@ -1174,6 +1187,8 @@ button.red {
 
   .tip__item {
     margin-top: 20px;
+    margin-right: 0;
+    width: 80%;
   }
 
   .tip__item:first-child {
@@ -1198,6 +1213,7 @@ button.red {
 
   .symtomCtn__item {
     flex-direction: column;
+    margin-right: 0;
   }
 
   .symtom-item_img_box {
@@ -1224,6 +1240,7 @@ button.red {
   .situation__text {
     text-align: center;
     padding: 0;
+    width: 100%;
   }
 
   .situation__text .miniBar {
@@ -1259,9 +1276,17 @@ button.red {
     margin-top: 30px;
   }
 
+  .mission_container {
+    padding: 16px;
+  }
+
   .mission__text .home__contact.red {
     margin: 0;
     margin-top: 10px;
+  }
+
+  .mission__text h1 {
+    line-height: 2rem;
   }
 
   #symtom.contact_section .symtom_container {
@@ -1288,10 +1313,12 @@ button.red {
 
   .news__item {
     margin-top: 30px;
+    width: 100%;
   }
 
   .app__container {
     flex-direction: column;
+    padding: 120px 16px 0 16px;
   }
 
   .app__container img {
@@ -1302,13 +1329,21 @@ button.red {
     text-align: center;
   }
 
+  .app__text h1 {
+    line-height: 2rem;
+  }
+
   .app__text p {
     padding: 0 20px;
+  }
+
+  #footer {
   }
 
   #footer .inner {
     flex-direction: column;
     padding-bottom: 0;
+    padding: 90px 16px 0 16px;
   }
 
   #footer > div.inner > div.f_box > div > h3 {
@@ -1340,6 +1375,10 @@ button.red {
   #footer .inner .f_box ul {
     margin: 0;
     text-align: center;
+  }
+
+  #footer .copyright {
+    width: 100%;
   }
 
   .arrow-up {
