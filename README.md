@@ -34,7 +34,7 @@ $(function () {
 });
 ```
 
-1. 순수 JS silder
+2. 순수 JS silder
 ```javascript
 // DOM 변수
 const contanier = document.querySelector('.slide__contanier');
